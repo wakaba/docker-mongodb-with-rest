@@ -1,8 +1,8 @@
 FROM debian:sid
 
 RUN apt-get update && \
-    apt-get -y install mongodb node && \
-    apt-get -y install npm && \
+    apt-get -y install mongodb npm && \
+    apt-get -y install node && \
     rm -rf /var/lib/apt/lists/* && \
     chmod go+w /tmp
 

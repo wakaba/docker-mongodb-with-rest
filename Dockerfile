@@ -8,8 +8,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     chmod go+w /tmp
 
-RUN nodejs --version
-
 RUN npm install amid
 
 ADD server.sh /server

@@ -1,3 +1,3 @@
 #!/bin/bash
-/mongodb/mongod &
+/mongodb/bin/mongod &
 nodejs /node_modules/amid/bin/amid-rest

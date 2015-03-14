@@ -1,7 +1,7 @@
 FROM debian:sid
 
 RUN apt-get update && \
-    apt-get -y install mongodb nodejs node-gyp node-tar npm && \
+    apt-get -y install mongodb nodejs node-gyp node-tar node-fstream npm && \
     rm -rf /var/lib/apt/lists/* && \
     chmod go+w /tmp
 

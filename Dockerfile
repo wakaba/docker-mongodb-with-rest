@@ -19,5 +19,6 @@ RUN curl -O http://downloads.mongodb.org/linux/mongodb-linux-x86_64-3.0.0.tgz &&
     chmod go+w /data/db
 
 ADD server.sh /server
+ADD mongodb.conf /mongodb.conf
 ADD amid-config.json /config.json
 RUN chmod u+x /server

@@ -1,10 +1,12 @@
 {
   "db": {
     "port": 27017,
-    "host": "0.0.0.0",
+    "host": "localhost",
   },
   "server": {
     "port": 37017,
     "address": "0.0.0.0"
-  }
+  },
+  "flavor": "regular",
+  "debug": true
 }

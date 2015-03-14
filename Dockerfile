@@ -1,7 +1,7 @@
-FROM debian
+FROM debian:sid
 
 RUN apt-get update && \
-    apt-get -y install mongodb node npm && \
+    apt-get -y install mongodb nodejs npm && \
     rm -rf /var/lib/apt/lists/* && \
     chmod go+w /tmp
 
